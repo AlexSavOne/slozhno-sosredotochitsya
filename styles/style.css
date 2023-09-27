@@ -29,6 +29,7 @@
   ;
   align-items: center;
   margin: 0 10px;
+  block-size: 100vb;
 }
 
 .header__decorated-item::before {
@@ -244,6 +245,7 @@
   margin: 52px 10px;
   min-inline-size: 355px;
   min-block-size: 647px;
+  block-size: 100vb;
 }
 
 .footer__block::before {

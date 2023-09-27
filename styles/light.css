@@ -10,7 +10,7 @@
     --btn-hover: #adadab;
     --btn-focus: #353430;
     --main-font: 'IBM Plex mono';
-    --bg-image: url(/images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
   }
 
   .theme_light .header__decorated-item {

@@ -10,7 +10,7 @@
     --btn-hover: #ff99c6;
     --btn-focus: #FF0070;
     --main-font: 'IBM Plex mono';
-    --bg-image: url(/images/cover-image-dark.png);
+    --bg-image: url(../images/cover-image-dark.png);
   }
 
 }

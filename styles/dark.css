@@ -9,6 +9,7 @@
   --btn-focus: #FF0070;
   --main-font: 'IBM Plex mono';
   --bg-image: url(../images/cover-image-dark.png);
+  --shadow-title-color: #FF0070;
   /* Дублируем переменные для тёмной темы */
 }
 
@@ -25,6 +26,7 @@
     --btn-focus: #FF0070;
     --main-font: 'IBM Plex mono';
     --bg-image: url(../images/cover-image-dark.png);
+    --shadow-title-color: #FF0070;
   }
 
 }

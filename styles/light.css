@@ -10,6 +10,8 @@
   --btn-focus: #353430;
   --main-font: 'IBM Plex mono';
   --bg-image: url(../images/cover-image-light.png);
+  --shadow-title-color: #FF8DCB;
+  --shadow-title-color-1024: #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -25,10 +27,20 @@
     --btn-focus: #353430;
     --main-font: 'IBM Plex mono';
     --bg-image: url(../images/cover-image-light.png);
+    --shadow-title-color: #FF8DCB;
+    --shadow-title-color-1024: #FF0070;
   }
 
   .theme_light .header__decorated-item {
     display: none;
+  }
+
+  @media (width >=1024px) {
+
+    .header__title {
+      text-shadow: 4px 4px 0 var(--shadow-title-color-1024, #FF0070);
+    }
+
   }
 
 }

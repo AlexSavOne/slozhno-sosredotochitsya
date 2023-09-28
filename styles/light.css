@@ -1,3 +1,17 @@
+:root.theme-light {
+  /* Переменные светлой темы */
+  --accent-color: #FF8DCB;
+  --bg-color: #FFF1F7;
+  --title-color: #FFC2E6;
+  --subtitle-color: #353430;
+  --text-color: #353430;
+  --btn-active: #353430;
+  --btn-hover: #adadab;
+  --btn-focus: #353430;
+  --main-font: 'IBM Plex mono';
+  --bg-image: url(../images/cover-image-light.png);
+}
+
 @media (prefers-color-scheme: light) {
 
   .page.theme_light {
@@ -18,3 +32,21 @@
   }
 
 }
+
+/*
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --accent-color: #FF8DCB;
+    --bg-color: #FFF1F7;
+    --title-color: #FFC2E6;
+    --subtitle-color: #353430;
+    --text-color: #353430;
+    --btn-active: #353430;
+    --btn-hover: #adadab;
+    --btn-focus: #353430;
+    --main-font: 'IBM Plex mono';
+    --bg-image: url(../images/cover-image-light.png);
+    Дублируем переменные светлой темы
+  }
+} */

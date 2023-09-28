@@ -1,3 +1,17 @@
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --bg-color: #000028;
+  --title-color: #DB00FF;
+  --subtitle-color: #000028;
+  --text-color: #F1B2CE;
+  --btn-active: #ff0070;
+  --btn-hover: #ff99c6;
+  --btn-focus: #FF0070;
+  --main-font: 'IBM Plex mono';
+  --bg-image: url(../images/cover-image-dark.png);
+  /* Дублируем переменные для тёмной темы */
+}
+
 @media (prefers-color-scheme: dark) {
 
   .page.theme_dark {

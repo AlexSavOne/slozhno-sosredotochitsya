@@ -7,7 +7,7 @@
   --text-color: #F1B2CE;
   --btn-color: #FF0070;
   --btn-active: #ff0070;
-  --btn-hover-active: #ff99c6;
+  --btn-hover-active: rgba(255, 0, 112, 0.4);
   --btn-focus: #FF0070;
   --main-font: 'IBM Plex mono';
   --bg-image: url(../images/cover-image-dark.png);

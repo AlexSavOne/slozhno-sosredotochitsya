@@ -50,7 +50,7 @@
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  border: transparent;
+  border: 1px solid transparent;
   padding: 1.5px 13px;
   color: var(--btn-color, #FF0070);
   font-family: var(--main-font, Arial, Helvetica, sans-serif);
@@ -70,11 +70,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--btn-hover-active, #ff80b8);
+  border: 1px solid var(--btn-hover-active, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:active {
-  border: 1px solid var(--btn-hover-active, #ff80b8);
+  border: 1px solid var(--btn-hover-active, rgba(255, 0, 112, 0.4));
 }
 
 .header__theme-menu-button:focus {

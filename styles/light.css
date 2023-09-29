@@ -20,7 +20,6 @@
   opacity: 0;
 }
 
-
 @media (prefers-color-scheme: light) {
 
   .page {
@@ -39,6 +38,5 @@
     --shadow-title-color: #FF8DCB;
     --shadow-title-color-1024: #FF0070;
   }
-
 
 }

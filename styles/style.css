@@ -70,11 +70,11 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--btn-hover-active, rgba(255, 0, 112, 0.4));
+  border: 1px solid var(--btn-hover-active, rgb(255 0 112 / 0.4));
 }
 
 .header__theme-menu-button:active {
-  border: 1px solid var(--btn-hover-active, rgba(255, 0, 112, 0.4));
+  border: 1px solid var(--btn-hover-active, rgb(255 0 112 / 0.4));
 }
 
 .header__theme-menu-button:focus {

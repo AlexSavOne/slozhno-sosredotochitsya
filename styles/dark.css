@@ -1,32 +1,101 @@
-:root.theme-dark {
+.page.theme_dark {
   --accent-color: #ff0070;
   --bg-color: #000028;
   --title-color: #DB00FF;
   --subtitle-color: #000028;
+  --title-section-color: #FF0070;
   --text-color: #F1B2CE;
+  --btn-color: #FF0070;
   --btn-active: #ff0070;
-  --btn-hover: #ff99c6;
+  --btn-hover-active: #ff99c6;
   --btn-focus: #FF0070;
   --main-font: 'IBM Plex mono';
   --bg-image: url(../images/cover-image-dark.png);
   --shadow-title-color: #FF0070;
-  /* Дублируем переменные для тёмной темы */
+}
+
+.theme_dark .header__decorated-item::before {
+  content: 'REC';
+  position: absolute;
+  color: var(--accent-color, #FF0070);
+  font-size: 18px;
+  inset-inline-end: 28px;
+  inset-block-start: 10px;
+}
+
+.theme_dark .header__decorated-item::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  color: var(--accent-color, #FF0070);
+  background-color: var(--accent-color, #FF0070);
+  filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
+  inline-size: 9px;
+  block-size: 9px;
+  inset-inline-end: 9px;
+  inset-block-start: 18px;
+}
+
+@media (width >=768px) {
+
+  .theme_dark .header__decorated-item::before {
+    inset-block-start: 20px;
+  }
+
+  .theme_dark .header__decorated-item::after {
+    inset-block-start: 28px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
 
-  .page.theme_dark {
+  .page {
     --accent-color: #ff0070;
     --bg-color: #000028;
     --title-color: #DB00FF;
     --subtitle-color: #000028;
+    --title-section-color: #FF0070;
     --text-color: #F1B2CE;
+    --btn-color: #FF0070;
     --btn-active: #ff0070;
-    --btn-hover: #ff99c6;
+    --btn-hover-active: #ff99c6;
     --btn-focus: #FF0070;
     --main-font: 'IBM Plex mono';
     --bg-image: url(../images/cover-image-dark.png);
     --shadow-title-color: #FF0070;
+  }
+
+  .header__decorated-item::before {
+    content: 'REC';
+    position: absolute;
+    color: var(--accent-color, #FF0070);
+    font-size: 18px;
+    inset-inline-end: 28px;
+    inset-block-start: 10px;
+  }
+
+  .header__decorated-item::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    color: var(--accent-color, #FF0070);
+    background-color: var(--accent-color, #FF0070);
+    filter: drop-shadow(0 0 4px var(--accent-color, #FF0070));
+    inline-size: 9px;
+    block-size: 9px;
+    inset-inline-end: 9px;
+    inset-block-start: 18px;
+  }
+
+  @media (width >=768px) {
+
+    .header__decorated-item::before {
+      inset-block-start: 20px;
+    }
+
+    .header__decorated-item::after {
+      inset-block-start: 28px;
+    }
   }
 
 }

@@ -1,12 +1,13 @@
-:root.theme-light {
-  /* Переменные светлой темы */
+.page.theme_light {
   --accent-color: #FF8DCB;
   --bg-color: #FFF1F7;
   --title-color: #FFC2E6;
   --subtitle-color: #353430;
+  --title-section-color: #353430;
   --text-color: #353430;
+  --btn-color: #353430;
   --btn-active: #353430;
-  --btn-hover: #adadab;
+  --btn-hover-active: #adadab;
   --btn-focus: #353430;
   --main-font: 'IBM Plex mono';
   --bg-image: url(../images/cover-image-light.png);
@@ -14,16 +15,24 @@
   --shadow-title-color-1024: #FF0070;
 }
 
+.theme_light .header__decorated-item {
+  display: none;
+  opacity: 0;
+}
+
+
 @media (prefers-color-scheme: light) {
 
-  .page.theme_light {
+  .page {
     --accent-color: #FF8DCB;
     --bg-color: #FFF1F7;
     --title-color: #FFC2E6;
     --subtitle-color: #353430;
+    --title-section-color: #353430;
     --text-color: #353430;
+    --btn-color: #353430;
     --btn-active: #353430;
-    --btn-hover: #adadab;
+    --btn-hover-active: #adadab;
     --btn-focus: #353430;
     --main-font: 'IBM Plex mono';
     --bg-image: url(../images/cover-image-light.png);
@@ -31,34 +40,5 @@
     --shadow-title-color-1024: #FF0070;
   }
 
-  .theme_light .header__decorated-item {
-    display: none;
-  }
-
-  @media (width >=1024px) {
-
-    .header__title {
-      text-shadow: 4px 4px 0 var(--shadow-title-color-1024, #FF0070);
-    }
-
-  }
 
 }
-
-/*
-@media (prefers-color-scheme: light) {
-
-  :root {
-    --accent-color: #FF8DCB;
-    --bg-color: #FFF1F7;
-    --title-color: #FFC2E6;
-    --subtitle-color: #353430;
-    --text-color: #353430;
-    --btn-active: #353430;
-    --btn-hover: #adadab;
-    --btn-focus: #353430;
-    --main-font: 'IBM Plex mono';
-    --bg-image: url(../images/cover-image-light.png);
-    Дублируем переменные светлой темы
-  }
-} */
